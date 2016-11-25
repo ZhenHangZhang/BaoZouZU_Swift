@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TableViewFooter" customModule="BaoZouZU_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天道酬勤" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8U1-gX-A1h">
+                    <rect key="frame" x="10" y="10" width="314" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8U1-gX-A1h" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="JNH-sR-kMa"/>
+                <constraint firstItem="8U1-gX-A1h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="YYi-e4-3WG"/>
+                <constraint firstAttribute="trailing" secondItem="8U1-gX-A1h" secondAttribute="trailing" constant="10" id="cUb-60-biI"/>
+                <constraint firstAttribute="bottom" secondItem="8U1-gX-A1h" secondAttribute="bottom" constant="10" id="e4u-HF-1uS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titlelabel" destination="8U1-gX-A1h" id="aox-eN-lz4"/>
+            </connections>
+            <point key="canvasLocation" x="-493" y="-259"/>
+        </view>
+    </objects>
+</document>

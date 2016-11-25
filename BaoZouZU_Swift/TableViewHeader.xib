@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TableViewHeader" customModule="BaoZouZU_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="191"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTR-50-1yE">
+                    <rect key="frame" x="10" y="10" width="418" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Ojr-fY-Vmv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.21130124697138619" green="0.87356782283125112" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="行走速度" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfJ-o2-MQt">
+                    <rect key="frame" x="169.5" y="40" width="100" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="UUs-vG-eE5"/>
+                        <constraint firstAttribute="height" constant="20" id="WOe-at-dA9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JA-94-3KP">
+                    <rect key="frame" x="144" y="75" width="150" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="OfL-fJ-yCR"/>
+                        <constraint firstAttribute="width" constant="150" id="XrD-pW-ngG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coordinate" translatesAutoresizingMaskIntoConstraints="NO" id="t7C-d7-Gbd">
+                    <rect key="frame" x="207" y="162" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="Pr6-j7-oIg"/>
+                        <constraint firstAttribute="height" constant="24" id="psf-Cw-VqG"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="state" translatesAutoresizingMaskIntoConstraints="NO" id="bh6-Ez-cWS">
+                    <rect key="frame" x="404" y="162" width="24" height="24"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="Cab-b8-aLl">
+                    <rect key="frame" x="10" y="162" width="24" height="24"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="t7C-d7-Gbd" firstAttribute="centerX" secondItem="qTR-50-1yE" secondAttribute="centerX" id="00N-GY-PfB"/>
+                <constraint firstItem="BfJ-o2-MQt" firstAttribute="centerX" secondItem="qTR-50-1yE" secondAttribute="centerX" id="62Q-be-qFC"/>
+                <constraint firstAttribute="trailing" secondItem="bh6-Ez-cWS" secondAttribute="trailing" constant="10" id="GDH-Ro-MOR"/>
+                <constraint firstItem="bh6-Ez-cWS" firstAttribute="width" secondItem="t7C-d7-Gbd" secondAttribute="width" id="Gez-iY-h1g"/>
+                <constraint firstItem="BfJ-o2-MQt" firstAttribute="top" secondItem="qTR-50-1yE" secondAttribute="bottom" constant="10" id="HMj-B1-WrO"/>
+                <constraint firstItem="bh6-Ez-cWS" firstAttribute="height" secondItem="t7C-d7-Gbd" secondAttribute="height" id="HzO-ZF-FdZ"/>
+                <constraint firstAttribute="bottom" secondItem="bh6-Ez-cWS" secondAttribute="bottom" constant="5" id="MQu-Em-Bqr"/>
+                <constraint firstItem="8JA-94-3KP" firstAttribute="centerX" secondItem="BfJ-o2-MQt" secondAttribute="centerX" id="V0U-nN-w6i"/>
+                <constraint firstItem="qTR-50-1yE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Xue-k3-RrA"/>
+                <constraint firstItem="Cab-b8-aLl" firstAttribute="height" secondItem="t7C-d7-Gbd" secondAttribute="height" id="aAZ-6Y-6ZU"/>
+                <constraint firstItem="Cab-b8-aLl" firstAttribute="width" secondItem="t7C-d7-Gbd" secondAttribute="width" id="bei-Ac-ce2"/>
+                <constraint firstAttribute="trailing" secondItem="qTR-50-1yE" secondAttribute="trailing" constant="10" id="ce7-7r-89u"/>
+                <constraint firstAttribute="bottom" secondItem="t7C-d7-Gbd" secondAttribute="bottom" constant="5" id="hY7-Wz-fdo"/>
+                <constraint firstItem="Cab-b8-aLl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="o9L-f7-FEk"/>
+                <constraint firstItem="qTR-50-1yE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="uBy-YC-wd1"/>
+                <constraint firstItem="8JA-94-3KP" firstAttribute="top" secondItem="BfJ-o2-MQt" secondAttribute="bottom" constant="15" id="xEl-Ma-ECa"/>
+                <constraint firstAttribute="bottom" secondItem="Cab-b8-aLl" secondAttribute="bottom" constant="5" id="z2Z-do-Uf2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="speedLabel" destination="qTR-50-1yE" id="oNe-9n-7Q5"/>
+                <outlet property="timeLabel" destination="8JA-94-3KP" id="79k-Nf-uhx"/>
+            </connections>
+            <point key="canvasLocation" x="6" y="-96.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="coordinate" width="20" height="20"/>
+        <image name="state" width="20" height="20"/>
+        <image name="time" width="20" height="20"/>
+    </resources>
+</document>
