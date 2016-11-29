@@ -15,9 +15,8 @@ class MobsLoginVieW: UIView {
     @IBOutlet weak var loginBtn: UIButton!
     @IBAction func loginClick(_ sender: Any) {
         login(username: userName.text!, passWord: passWord.text!)
-
     }
-    var delegate : MobsLoginViewDelegate?
+   weak var delegate : MobsLoginViewDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
         loginBtn.isEnabled = false
@@ -54,18 +53,21 @@ extension MobsLoginVieW:UITextFieldDelegate{
             return;
         }
         ZHZDLog("\(username)\(passWord)")
-        NetWorkManager.shared.loginMethod(userName: username!, psd: passWord!, completion: {(json,success)->Void in
+        NetWorkManager.shared.loginMethod(userName: username!, psd: passWord!, completion: {[weak self](json,success)->Void in
             if success {
                 let userInfoDic  = json as!NSDictionary
                 ZHZUserDefaults.set(username, forKey:USER_NAME)
                 ZHZUserDefaults.set(userInfoDic, forKey: USER_INFO)
                 ZHZUserDefaults.set("yes", forKey: IsLogin)
                 ZHZUserDefaults.synchronize()
-                self.delegate?.loginSuccess()
+                self?.delegate?.loginSuccess()
                 ZHZDLog("\(json)")
             }else{
               let error = json as!NSError
-                let respon = error.userInfo["com.alamofire.serialization.response.error.response"] as! HTTPURLResponse
+                
+                guard let respon = error.userInfo["com.alamofire.serialization.response.error.response"] as? HTTPURLResponse else {
+                SVProgressHUD.show(UIImage.init(named: "error"), status: "网络错误");                   return
+                }
                 let msgStr = respon.allHeaderFields["Message"] as! NSString
                 let msg = msgStr.replacingPercentEscapes(using: String.Encoding.utf8.rawValue)!
                 SVProgressHUD.show(UIImage.init(named: "error"), status: msg)
@@ -75,6 +77,6 @@ extension MobsLoginVieW:UITextFieldDelegate{
     }
 }
 
-protocol MobsLoginViewDelegate {
+protocol MobsLoginViewDelegate:NSObjectProtocol {
     func loginSuccess()
 }

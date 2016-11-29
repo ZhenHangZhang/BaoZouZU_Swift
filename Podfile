@@ -1,8 +1,12 @@
-platform :ios, '8.0'
-use_frameworks!
+
 
 
 target 'BaoZouZU_Swift' do
+
+platform :ios, '8.0'
+
+use_frameworks!
+
 
 pod 'AFNetworking'
 pod 'FMDB'

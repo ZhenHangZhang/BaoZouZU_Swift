@@ -10,6 +10,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    
+    
     fileprivate lazy var NavC :BaseViewController = {
         return BaseViewController(rootViewController: MainViewController())
     }()
@@ -51,6 +53,7 @@ extension LoginViewController{
     )
     }
     fileprivate func setUI(){
+
         let imgV : UIImageView = UIImageView(frame: view.bounds)
         imgV.image = UIImage.init(named: "login_bg")
         view.addSubview(imgV)

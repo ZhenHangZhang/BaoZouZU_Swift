@@ -8,6 +8,7 @@
 
 import UIKit
 import IQKeyboardManager
+import SVProgressHUD
 
 
 @UIApplicationMain
@@ -23,10 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow()
         window?.backgroundColor = UIColor.white
+        
         //设置全局的键盘处理,不显示工具条
         IQKeyboardManager.shared().isEnabled = true
         IQKeyboardManager.shared().isEnableAutoToolbar = false
 
+        SVProgressHUD.setMinimumDismissTimeInterval(2.0)
+        SVProgressHUD.setBackgroundColor(UIColor.darkGray)
         let userDe = UserDefaults.standard.object(forKey: IsLogin) as? String
         if userDe == "yes" {
             window?.rootViewController = NavC

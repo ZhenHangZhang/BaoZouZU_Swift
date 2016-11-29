@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		923A5E7E1DED7CFD005DC34D /* TimeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923A5E7D1DED7CFD005DC34D /* TimeAnnotation.swift */; };
+		923A5E801DED834F005DC34D /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923A5E7F1DED834F005DC34D /* CustomAnnotationView.swift */; };
 		927CC4AA1DE6B8B600F0C99F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927CC4A91DE6B8B600F0C99F /* AppDelegate.swift */; };
 		927CC4AC1DE6B8B600F0C99F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927CC4AB1DE6B8B600F0C99F /* ViewController.swift */; };
 		927CC4AF1DE6B8B600F0C99F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927CC4AD1DE6B8B600F0C99F /* Main.storyboard */; };
@@ -49,14 +51,20 @@
 		927CC5161DE818CF00F0C99F /* TableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927CC5151DE818CF00F0C99F /* TableViewHeader.xib */; };
 		927CC5191DE81DD100F0C99F /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927CC5171DE81DD100F0C99F /* CustomTableViewCell.swift */; };
 		927CC51A1DE81DD100F0C99F /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927CC5181DE81DD100F0C99F /* CustomTableViewCell.xib */; };
-		927CC51C1DE824E300F0C99F /* MobsLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927CC51B1DE824E300F0C99F /* MobsLocationManager.swift */; };
 		927CC51E1DE833C200F0C99F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927CC51D1DE833C200F0C99F /* HistoryViewController.swift */; };
+		927CC5281DE83BA300F0C99F /* MobsLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927CC5271DE83BA300F0C99F /* MobsLocationManager.swift */; };
+		929AA0FD1DEBF44600F13DEB /* DataCacheTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AA0FC1DEBF44600F13DEB /* DataCacheTool.swift */; };
+		929AA0FF1DEBF47500F13DEB /* LocationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AA0FE1DEBF47500F13DEB /* LocationDataModel.swift */; };
+		929AA1011DEBF5D700F13DEB /* MobsDateTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AA1001DEBF5D700F13DEB /* MobsDateTool.swift */; };
+		929AA1031DEBF67B00F13DEB /* NSDateFormatte+shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AA1021DEBF67B00F13DEB /* NSDateFormatte+shared.swift */; };
 		C9CD2FFFB75298FC5BE17AFB /* Pods_BaoZouZU_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACCE43369A150AC137EB93E /* Pods_BaoZouZU_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37C2BCAB5A455E2CBCC3F2F0 /* Pods-BaoZouZU_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaoZouZU_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaoZouZU_Swift/Pods-BaoZouZU_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		416684F9A4B822A48F0E45A7 /* Pods-BaoZouZU_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaoZouZU_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaoZouZU_Swift/Pods-BaoZouZU_Swift.release.xcconfig"; sourceTree = "<group>"; };
+		923A5E7D1DED7CFD005DC34D /* TimeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAnnotation.swift; sourceTree = "<group>"; };
+		923A5E7F1DED834F005DC34D /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
 		927CC4A61DE6B8B600F0C99F /* BaoZouZU_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaoZouZU_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		927CC4A91DE6B8B600F0C99F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		927CC4AB1DE6B8B600F0C99F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,8 +110,16 @@
 		927CC5151DE818CF00F0C99F /* TableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
 		927CC5171DE81DD100F0C99F /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		927CC5181DE81DD100F0C99F /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
-		927CC51B1DE824E300F0C99F /* MobsLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobsLocationManager.swift; sourceTree = "<group>"; };
 		927CC51D1DE833C200F0C99F /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		927CC51F1DE8384600F0C99F /* YYKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYKit.framework; path = "../../Library/Developer/Xcode/DerivedData/BaoZouZU_Swift-djxxbscqjtbryxegscdwrikkvkym/Build/Products/Debug-iphoneos/YYKit/YYKit.framework"; sourceTree = "<group>"; };
+		927CC5211DE8387000F0C99F /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = Pods/AMap3DMap/MAMapKit.framework; sourceTree = "<group>"; };
+		927CC5231DE8387A00F0C99F /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapLocationKit.framework; path = Pods/AMapLocation/AMapLocationKit.framework; sourceTree = "<group>"; };
+		927CC5251DE8389100F0C99F /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapFoundationKit.framework; path = Pods/AMapFoundation/AMapFoundationKit.framework; sourceTree = "<group>"; };
+		927CC5271DE83BA300F0C99F /* MobsLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobsLocationManager.swift; sourceTree = "<group>"; };
+		929AA0FC1DEBF44600F13DEB /* DataCacheTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCacheTool.swift; sourceTree = "<group>"; };
+		929AA0FE1DEBF47500F13DEB /* LocationDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDataModel.swift; sourceTree = "<group>"; };
+		929AA1001DEBF5D700F13DEB /* MobsDateTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobsDateTool.swift; sourceTree = "<group>"; };
+		929AA1021DEBF67B00F13DEB /* NSDateFormatte+shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDateFormatte+shared.swift"; sourceTree = "<group>"; };
 		BACCE43369A150AC137EB93E /* Pods_BaoZouZU_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaoZouZU_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -131,9 +147,21 @@
 		48F098910171923170BCF316 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				927CC5251DE8389100F0C99F /* AMapFoundationKit.framework */,
+				927CC5231DE8387A00F0C99F /* AMapLocationKit.framework */,
+				927CC5211DE8387000F0C99F /* MAMapKit.framework */,
+				927CC51F1DE8384600F0C99F /* YYKit.framework */,
 				BACCE43369A150AC137EB93E /* Pods_BaoZouZU_Swift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		923A5E7C1DED7CD5005DC34D /* ann */ = {
+			isa = PBXGroup;
+			children = (
+				923A5E7F1DED834F005DC34D /* CustomAnnotationView.swift */,
+			);
+			name = ann;
 			sourceTree = "<group>";
 		};
 		927CC49D1DE6B8B600F0C99F = {
@@ -178,6 +206,8 @@
 		927CC4BD1DE6BA1300F0C99F /* M */ = {
 			isa = PBXGroup;
 			children = (
+				929AA0FE1DEBF47500F13DEB /* LocationDataModel.swift */,
+				923A5E7D1DED7CFD005DC34D /* TimeAnnotation.swift */,
 			);
 			name = M;
 			sourceTree = "<group>";
@@ -185,6 +215,7 @@
 		927CC4BE1DE6BA1C00F0C99F /* V */ = {
 			isa = PBXGroup;
 			children = (
+				923A5E7C1DED7CD5005DC34D /* ann */,
 				927CC50E1DE8188C00F0C99F /* MainV */,
 				927CC4FF1DE6D04900F0C99F /* LoginV */,
 				927CC4F41DE6BD5900F0C99F /* UI */,
@@ -208,7 +239,9 @@
 			children = (
 				927CC50A1DE7EC5D00F0C99F /* NetWorkManager.swift */,
 				927CC50C1DE7F94100F0C99F /* NetWorkManager+Gategroy.swift */,
-				927CC51B1DE824E300F0C99F /* MobsLocationManager.swift */,
+				927CC5271DE83BA300F0C99F /* MobsLocationManager.swift */,
+				929AA0FC1DEBF44600F13DEB /* DataCacheTool.swift */,
+				929AA1001DEBF5D700F13DEB /* MobsDateTool.swift */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -216,6 +249,7 @@
 		927CC4C11DE6BA3B00F0C99F /* Gategroy */ = {
 			isa = PBXGroup;
 			children = (
+				929AA1021DEBF67B00F13DEB /* NSDateFormatte+shared.swift */,
 			);
 			name = Gategroy;
 			sourceTree = "<group>";
@@ -325,6 +359,11 @@
 						DevelopmentTeam = W3SD8328FA;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -438,20 +477,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				929AA1031DEBF67B00F13DEB /* NSDateFormatte+shared.swift in Sources */,
+				929AA0FF1DEBF47500F13DEB /* LocationDataModel.swift in Sources */,
 				927CC4AC1DE6B8B600F0C99F /* ViewController.swift in Sources */,
 				927CC4F31DE6BB0700F0C99F /* BaseViewController.swift in Sources */,
 				927CC50D1DE7F94100F0C99F /* NetWorkManager+Gategroy.swift in Sources */,
+				923A5E7E1DED7CFD005DC34D /* TimeAnnotation.swift in Sources */,
+				929AA1011DEBF5D700F13DEB /* MobsDateTool.swift in Sources */,
 				927CC51E1DE833C200F0C99F /* HistoryViewController.swift in Sources */,
 				927CC4BC1DE6B8E400F0C99F /* Header.swift in Sources */,
+				927CC5281DE83BA300F0C99F /* MobsLocationManager.swift in Sources */,
 				927CC5011DE6D06800F0C99F /* MobsLoginVieW.swift in Sources */,
-				927CC51C1DE824E300F0C99F /* MobsLocationManager.swift in Sources */,
 				927CC5101DE818A600F0C99F /* TableViewHeader.swift in Sources */,
 				927CC5121DE818BA00F0C99F /* TableViewFooter.swift in Sources */,
 				927CC4F81DE6C17C00F0C99F /* MainViewController.swift in Sources */,
+				929AA0FD1DEBF44600F13DEB /* DataCacheTool.swift in Sources */,
 				927CC50B1DE7EC5D00F0C99F /* NetWorkManager.swift in Sources */,
 				927CC4FD1DE6C1B800F0C99F /* LoginViewController.swift in Sources */,
 				927CC4AA1DE6B8B600F0C99F /* AppDelegate.swift in Sources */,
 				927CC4F61DE6BD7100F0C99F /* BackButton.swift in Sources */,
+				923A5E801DED834F005DC34D /* CustomAnnotationView.swift in Sources */,
 				927CC5191DE81DD100F0C99F /* CustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,7 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -561,7 +606,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -576,6 +621,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = W3SD8328FA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/AMap3DMap",
+					"$(PROJECT_DIR)/Pods/AMapLocation",
+					"$(PROJECT_DIR)/Pods/AMapFoundation",
+				);
 				INFOPLIST_FILE = BaoZouZU_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -597,6 +648,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = W3SD8328FA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/AMap3DMap",
+					"$(PROJECT_DIR)/Pods/AMapLocation",
+					"$(PROJECT_DIR)/Pods/AMapFoundation",
+				);
 				INFOPLIST_FILE = BaoZouZU_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

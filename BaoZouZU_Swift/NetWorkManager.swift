@@ -47,4 +47,12 @@ class NetWorkManager: AFHTTPSessionManager {
             post(URLString, parameters: parameters, progress: nil, success: success, failure: failure)
         }
     }
+    func networkStatus(){
+        AFNetworkReachabilityManager.shared().startMonitoring()
+        AFNetworkReachabilityManager.shared().setReachabilityStatusChange { (Status) in
+            ZHZDLog("\(Status)")
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: NET_NOTIFITION), object:Status)
+        }
+    }
+    
 }

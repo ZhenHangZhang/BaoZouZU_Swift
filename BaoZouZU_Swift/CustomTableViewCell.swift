@@ -10,22 +10,34 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var latLabel: UILabel!
     let PI =  3.14159265358979323846
 
     @IBOutlet weak var statusImg: UIImageView!
     @IBOutlet weak var lonLabel: UILabel!
     
+    var model :LocationDataModel?{
+        didSet{
+            self.latLabel.text = model?.latitude
+            self.lonLabel.text = model?.longitude
+            if model?.issuccess == "success" {
+                self.statusImg.image = UIImage.init(named: "success")
+            }else{
+                self.statusImg.image = UIImage.init(named: "fail")
+            }
+            let timeA = model!.currenttimeminute!.components(separatedBy: " ") as NSArray
+            self.timeLabel.text = timeA.lastObject as! String?
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
     }
-    
     override func draw(_ rect: CGRect) {
         drawLine(rect: rect)
         drawCircle(point: CGPoint(x: 20, y: 30), radius: 8)

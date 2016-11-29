@@ -20,7 +20,19 @@ let IsLogin = "IsLogin"
 let USER_NAME = "USERNAME"
 let USER_INFO = "USERINFO"
 
+let TABLE_NAME = "BOSO"
 
+
+let NET_NOTIFITION = "NETWORKNOTIFITION"
+
+
+
+
+
+let BOSOZOKU_DATA_PATH = (NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory,
+                                                             FileManager.SearchPathDomainMask.userDomainMask, true)[0] ).appending("/StaffPosition.db")
+
+ 
 let ZHZUserDefaults = UserDefaults.standard
 
 func SCREEN_WIDTH(_ object:UIView) ->CGFloat{
@@ -39,7 +51,7 @@ func RGBColor(_ r:CGFloat,g:CGFloat,b:CGFloat,a:CGFloat) -> UIColor {
 func ZHZDLog<T>(_ message:T,fileName:String = #file,methodName:String = #function,lineNum:Int = #line){
     #if DEBUG
         let logStr:String = (fileName as NSString).pathComponents.last!.replacingOccurrences(of: "swift", with: "");
-        print("类\(logStr)方法\(methodName)行[\(lineNum)]数据\(message)")
+        print("\(logStr)方法\(methodName)行[\(lineNum)]\n :\(message)")
     #endif
 }
 

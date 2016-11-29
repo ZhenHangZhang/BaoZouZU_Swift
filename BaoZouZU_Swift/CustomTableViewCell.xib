@@ -32,14 +32,24 @@
                             <constraint firstAttribute="height" constant="15" id="V1E-gG-n0C"/>
                             <constraint firstAttribute="width" constant="100" id="hQv-mA-2MF"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="az5-su-bTe">
                         <rect key="frame" x="127" y="33" width="100" height="15"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFy-Vy-MeM">
+                        <rect key="frame" x="30" y="18.5" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="6hw-oM-lef"/>
+                            <constraint firstAttribute="height" constant="20" id="UrI-Yj-v7h"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -47,9 +57,11 @@
                     <constraint firstItem="az5-su-bTe" firstAttribute="height" secondItem="q5a-RO-dhR" secondAttribute="height" id="1JU-zf-SyK"/>
                     <constraint firstItem="az5-su-bTe" firstAttribute="top" secondItem="q5a-RO-dhR" secondAttribute="bottom" constant="10" id="3Sx-yL-CEu"/>
                     <constraint firstItem="az5-su-bTe" firstAttribute="width" secondItem="q5a-RO-dhR" secondAttribute="width" id="LP8-xl-S83"/>
+                    <constraint firstItem="zFy-Vy-MeM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="Mc3-VZ-Tv5"/>
                     <constraint firstItem="q5a-RO-dhR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="NLX-4Z-BgP"/>
                     <constraint firstAttribute="trailingMargin" secondItem="awm-sD-8Yd" secondAttribute="trailing" constant="10" id="NS3-tJ-sg4"/>
                     <constraint firstItem="q5a-RO-dhR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="d7y-nN-tOQ"/>
+                    <constraint firstItem="zFy-Vy-MeM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dUr-AB-6z8"/>
                     <constraint firstItem="az5-su-bTe" firstAttribute="leading" secondItem="q5a-RO-dhR" secondAttribute="leading" id="hwN-uG-Hdh"/>
                     <constraint firstItem="awm-sD-8Yd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="naA-Qf-LCr"/>
                 </constraints>
@@ -58,6 +70,7 @@
                 <outlet property="latLabel" destination="q5a-RO-dhR" id="ylq-p1-4y1"/>
                 <outlet property="lonLabel" destination="az5-su-bTe" id="7jp-rU-doF"/>
                 <outlet property="statusImg" destination="awm-sD-8Yd" id="2Dq-MN-hsf"/>
+                <outlet property="timeLabel" destination="zFy-Vy-MeM" id="jMN-6J-3Mx"/>
             </connections>
             <point key="canvasLocation" x="-25" y="-224"/>
         </tableViewCell>
